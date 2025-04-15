@@ -20,12 +20,14 @@ def main():
             # Initialize variables for the loop
             product = 1
             counter = 0
-            # Loop while counter is less than user_num
-            while counter < user_num:
+            while True:
                 # Increment counter by 1
                 counter += 1
                 # Multiply product by counter
                 product *= counter
+                # Loop while counter is less than user_num
+                if (counter >= user_num):
+                    break
             # Display the product
             print(f"{user_num}! = {product}.")
         else:
